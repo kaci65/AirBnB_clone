@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-class FileStorage that serializes instances to a JSON file 
+class FileStorage that serializes instances to a JSON file
 and deserializes JSON file to instances
 """
 import json
@@ -32,8 +32,8 @@ class FileStorage():
 
     def reload(self):
         """
-        deserializes the JSON file to __objects (only if the JSON file 
-        (__file_path) exists ; otherwise, do nothing. If the file doesn’t 
+        deserializes the JSON file to __objects (only if the JSON file
+        (__file_path) exists ; otherwise, do nothing. If the file doesn’t
         exist, no exception should be raised)
         """
         path = self.__file_path
