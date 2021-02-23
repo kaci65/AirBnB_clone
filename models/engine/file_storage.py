@@ -39,8 +39,6 @@ class FileStorage():
         path = self.__file_path
         try:
             with open(path, mode="r") as fd:
-                for key, value in (json.load(fd)).items():
-                    value = eval(value["__class__"])(**value)
-                    self.__objects[key] = value
+                # complete code
         except:
             pass
